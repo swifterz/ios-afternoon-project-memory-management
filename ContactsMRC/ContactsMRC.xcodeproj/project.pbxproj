@@ -13,6 +13,8 @@
 		E63FDAA1249328D500E5EE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63FDAA0249328D500E5EE38 /* Assets.xcassets */; };
 		E63FDAA4249328D500E5EE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63FDAA2249328D500E5EE38 /* LaunchScreen.storyboard */; };
 		E63FDAA7249328D500E5EE38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FDAA6249328D500E5EE38 /* main.m */; };
+		E63FDAB124932B4000E5EE38 /* LSIContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FDAB024932B4000E5EE38 /* LSIContactsTableViewController.m */; };
+		E63FDAB424932B6600E5EE38 /* LSIContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FDAB324932B6600E5EE38 /* LSIContactsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E63FDAA3249328D500E5EE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E63FDAA5249328D500E5EE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E63FDAA6249328D500E5EE38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E63FDAAF24932B4000E5EE38 /* LSIContactsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactsTableViewController.h; sourceTree = "<group>"; };
+		E63FDAB024932B4000E5EE38 /* LSIContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactsTableViewController.m; sourceTree = "<group>"; };
+		E63FDAB224932B6600E5EE38 /* LSIContactsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactsDetailViewController.h; sourceTree = "<group>"; };
+		E63FDAB324932B6600E5EE38 /* LSIContactsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactsDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				E63FDAA2249328D500E5EE38 /* LaunchScreen.storyboard */,
 				E63FDAA6249328D500E5EE38 /* main.m */,
 				E63FDAAD2493292C00E5EE38 /* Resources */,
+				E63FDAAF24932B4000E5EE38 /* LSIContactsTableViewController.h */,
+				E63FDAB024932B4000E5EE38 /* LSIContactsTableViewController.m */,
+				E63FDAB224932B6600E5EE38 /* LSIContactsDetailViewController.h */,
+				E63FDAB324932B6600E5EE38 /* LSIContactsDetailViewController.m */,
 			);
 			path = ContactsMRC;
 			sourceTree = "<group>";
@@ -151,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63FDA96249328D300E5EE38 /* AppDelegate.m in Sources */,
+				E63FDAB424932B6600E5EE38 /* LSIContactsDetailViewController.m in Sources */,
 				E63FDAA7249328D500E5EE38 /* main.m in Sources */,
+				E63FDAB124932B4000E5EE38 /* LSIContactsTableViewController.m in Sources */,
 				E63FDA99249328D300E5EE38 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

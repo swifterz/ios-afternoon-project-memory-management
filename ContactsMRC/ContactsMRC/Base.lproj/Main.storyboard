@@ -10,7 +10,7 @@
         <!--Contacts-->
         <scene sceneID="DP5-1X-Hix">
             <objects>
-                <tableViewController id="K4f-uy-nUS" sceneMemberID="viewController">
+                <tableViewController id="K4f-uy-nUS" customClass="LSIContactsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mk9-gd-zIX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="831.88405797101461" y="152.67857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Contacts Detail View Controller-->
         <scene sceneID="7Gh-gg-cKP">
             <objects>
-                <viewController id="7D1-gM-Obi" sceneMemberID="viewController">
+                <viewController id="7D1-gM-Obi" customClass="LSIContactsDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GFD-vS-rsV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,8 +95,17 @@
                         <viewLayoutGuide key="safeArea" id="6BW-qe-i2w"/>
                     </view>
                     <navigationItem key="navigationItem" id="GRG-q9-FUd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AqO-7P-slW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AqO-7P-slW">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="7D1-gM-Obi" id="IB1-cI-WvW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="SFA-Fc-dEB" id="M21-GJ-VxZ"/>
+                        <outlet property="nameTextField" destination="74t-IV-5vj" id="DGC-GK-QA2"/>
+                        <outlet property="phoneNumberTextField" destination="dH3-Pj-hlV" id="hJI-qo-Wsg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jap-bV-eOZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
