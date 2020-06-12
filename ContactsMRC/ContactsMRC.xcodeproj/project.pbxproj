@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E63FDA96249328D300E5EE38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FDA95249328D300E5EE38 /* AppDelegate.m */; };
 		E63FDA99249328D300E5EE38 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FDA98249328D300E5EE38 /* SceneDelegate.m */; };
-		E63FDA9C249328D300E5EE38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FDA9B249328D300E5EE38 /* ViewController.m */; };
 		E63FDA9F249328D300E5EE38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63FDA9D249328D300E5EE38 /* Main.storyboard */; };
 		E63FDAA1249328D500E5EE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63FDAA0249328D500E5EE38 /* Assets.xcassets */; };
 		E63FDAA4249328D500E5EE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63FDAA2249328D500E5EE38 /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		E63FDA95249328D300E5EE38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E63FDA97249328D300E5EE38 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		E63FDA98249328D300E5EE38 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		E63FDA9A249328D300E5EE38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E63FDA9B249328D300E5EE38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E63FDA9E249328D300E5EE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E63FDAA0249328D500E5EE38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E63FDAA3249328D500E5EE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,25 @@
 		E63FDA93249328D300E5EE38 /* ContactsMRC */ = {
 			isa = PBXGroup;
 			children = (
+				E63FDA9D249328D300E5EE38 /* Main.storyboard */,
+				E63FDAA2249328D500E5EE38 /* LaunchScreen.storyboard */,
+				E63FDAA6249328D500E5EE38 /* main.m */,
+				E63FDAAD2493292C00E5EE38 /* Resources */,
+			);
+			path = ContactsMRC;
+			sourceTree = "<group>";
+		};
+		E63FDAAD2493292C00E5EE38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				E63FDA94249328D300E5EE38 /* AppDelegate.h */,
 				E63FDA95249328D300E5EE38 /* AppDelegate.m */,
 				E63FDA97249328D300E5EE38 /* SceneDelegate.h */,
 				E63FDA98249328D300E5EE38 /* SceneDelegate.m */,
-				E63FDA9A249328D300E5EE38 /* ViewController.h */,
-				E63FDA9B249328D300E5EE38 /* ViewController.m */,
-				E63FDA9D249328D300E5EE38 /* Main.storyboard */,
 				E63FDAA0249328D500E5EE38 /* Assets.xcassets */,
-				E63FDAA2249328D500E5EE38 /* LaunchScreen.storyboard */,
 				E63FDAA5249328D500E5EE38 /* Info.plist */,
-				E63FDAA6249328D500E5EE38 /* main.m */,
 			);
-			path = ContactsMRC;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +105,7 @@
 		E63FDA89249328D300E5EE38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSI;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Enayatullah Naseri";
 				TargetAttributes = {
@@ -146,7 +150,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63FDA9C249328D300E5EE38 /* ViewController.m in Sources */,
 				E63FDA96249328D300E5EE38 /* AppDelegate.m in Sources */,
 				E63FDAA7249328D500E5EE38 /* main.m in Sources */,
 				E63FDA99249328D300E5EE38 /* SceneDelegate.m in Sources */,
